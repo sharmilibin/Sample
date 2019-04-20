@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align:left;
 }
 
 .App-logo {
@@ -8,18 +8,64 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #4377df;
+  min-height: 50vh;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(47, 168, 128);
+}
+body {
+  background-color: #c5cddd;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 20vh;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.twitter {
+  display: flex;
+  height: 46px;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid rgba(238,238,238 ,1);
+  border-radius: 5px;
+  color: rgba(117,117,117 ,1);
+  box-shadow: 5px 10px 20px -20px rgba(85,172,238 ,1);
+}
+.twitter li {
+  cursor: pointer;
+}
+.twitter li:hover{
+  color: rgba(85,172,238 ,1);
+}
+.twitter__bird {
+  color: rgba(85,172,238 ,1);
+  font-size: 1.3em;
+}
+.twitter li:not(:last-child):not(.twitter__bird) {
+  margin-right: 10px;
+}
+.twitter li  i:not(.fa-twitter):not(.fa-search):not(.fa-user-circle-o) {
+  margin-right: 3px;
+}
+.twitter li > button {
+  font-size: 0.8em;
+  border: 0;
+  background: rgba(85,172,238 ,1);
+  color: #fff;
+  border-radius: 100px;
 }
 
 @keyframes App-logo-spin {

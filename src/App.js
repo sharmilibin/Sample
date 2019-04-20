@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Menu from './component/list';
 import './App.css';
+import {
+  faGithubAlt,
+  faGoogle,
+  faFacebook,
+  faTwitter
+} from '@fortawesome/free-brands-svg-icons';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="">
+        <ul class="twitter" role="navigation">
+    <li>Home</li>
+    <li><i class="fa fa-bell-o"></i>Health</li>
+    <li><i class="fa fa-envelope-o"></i>Welness</li>
+    <li>
+    <FontAwesomeIcon icon={faTwitter} />     
+    
+
+      </li>
+    <li><form><input placeholder="search twitter"/><i class="fa fa-search"></i></form></li>
+    <li><i class="fa fa-user-circle-o"></i></li>
+    <li><button>tweet</button></li>
+  </ul>
+        <Menu/>
       </div>
     );
   }
